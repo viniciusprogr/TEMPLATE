@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylecadastre.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? família= Poppins:ital,wght@0,400;0,900;1,700 & display=swap"
+        rel="stylesheet">
+    <title>Formulario 2</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Criar uma conta</h2>
+        </div>
+        <form id="form" class="form">
+            <div class="form-control ">
+                <label for="username">Nome de usuário</label>
+                <input type="text" id="username" placeholder="Digite seu nome de usuario..." />
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+
+            <div class="form-control ">
+                <label for="Email">Email</label>
+                <input type="text" id="email" placeholder="Digite seu Email..." />
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+
+
+            <div class="form-control ">
+                <label for="password">Senha</label>
+                <input type="text" id="password" placeholder="Digite sua Senha..." />
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password-confirmation">Confrimação de Senha</label>
+                <input type="text" id="password-confirmation" placeholder="Digite a senha novamente..." />
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+
+            <button type="submit" onclick="cadastrar()">Enviar</button>
+        </form>
+    </div>
+
+
+    <script>
+
+
+        function cadastrar() {
+            var login = document.getElementById('usuario').value;
+            var senha = document.getElementById('senha').value;
+            var email = document.getElementById('email').value;
+
+            if (login == 'usario' && senha == 'senha' && email == 'email') {
+                alert('sucesso');
+            }
+            else {
+                alert('usario ou senha invalido');
+            }
+        }
+
+    </script>
+    </script>
+
+    <script src="https://kit.fontawesome.com/ceb2b2caa4.js" crossorigin="anonymous"></script>
+    <script src="./scrpt.js">
+    </script>
+</body>
+
+</html>
